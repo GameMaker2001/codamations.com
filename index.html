@@ -1,33 +1,228 @@
 <!DOCTYPE html> 
 <html lang="en-US">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta charset="utf-8" >
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Codamations Showcase</title>
         <meta name="description" content="a website assignment">
         <meta name="author" content="Ezra B">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" type="image/x-icon" href="images/CodasIcon.ico">
+        <script src="https://kit.fontawesome.com/19fe549f49.js" crossorigin="anonymous"></script>
     </head>
     <body>
-       <header>
-        Portfolio Website
-       </header>
-       <nav> <!--a section with navigation links-->
-        <a href="writing/index.html">Writing</a>
-        <a href="index.html">About</a>
-       </nav>
-       <nav>
-        <a href="https://www.artstation.com/emerald123"> Artstation</a>
-        <a href="https://www.cgtrader.com/codamations"> CGTrader</a>
-        <a href="https://twitter.com/Codamations"> Twitter</a>
-        <a href="https://www.youtube.com/channel/UCV7XKNIbBKnyOAssoJKuIMg"> Youtube(Inactive)</a></p>
-       </nav>
-       <article> <!--basically the main part of the website asside from the header and nav links(for organisation)-->
-        <h1>Welcome to the website, this is a demostration of all my previous works.
-        </h1>
-        <p>Here is some content! This website was created using
-            the exaple set by Alex Rutar.
-       </article>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/CODAMATIONS-4-29-2023.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#services">Social</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                    
+            </nav>
+            <div class="header-text">
+                <p>Software/Video Game Developer/3D Modeler</p>
+                <h3>Hey I'm Coda<br> A young talented <span>Kid</span><br> working in the <span>Software Industry</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <!--about region-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/2o3.png" width="900" height="525">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About The Creator</h1>
+                    <p>Codamations is a young programmer who started coding at a young age.
+                        As time went on i began a youtube channel to showcase my earlier works including 2D animations and coding tutorials.
+                        Quiting the youtube channel to focus on my personal life i began creating Visual FX, inspired by fictional heroes such as The Flash.
+                        I began to create full 3D model recreations of these fictional superheros such as Spider-Man and The Flash, Some of these models are on sale.
+                        Eventually i reverted to my roots and began coding again, except now that i was older i was able to fully fledge these projects for experience, such as this websi 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('services')">Services</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Creating Software or 3D/2D Game Development</li>
+                            <li><span>3D/VFX</span><br>3D Modeling, Texturing, Rigging and Rendering</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Coming Soon</span><br>Future Freelancing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="services">
+                        <ul>
+                            <li><span>Web Programs</span><br>JavaScript, CSS, and HTML in Visual Studio Code</li>
+                            <li><span>Software/Game Programs</span><br>Unreal Engine 5, Java in Eclipse/Android Studio, Python/C++ in VSC </li>
+                            <li><span>3D/VFX Programs</span><br>Blender, Substance Painter, Cinema 4D, After Effects,</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </div>
+<!---services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-java"></i><i class="fa-brands fa-python"></i>
+                <h3>Software/Game Development</h3>
+                <p>Software development experience in Java, Python, and C++. Game development experience in Java, Python, Unreal Engine, and C++.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cube"></i><i class="fa-solid fa-pencil"></i>
+                <h3>3D Modeling/Rendering</h3>
+                <p>3D Modeling experience in Blender and Cinema 4D. Rigging included, Textures created in Substance Painter, 4k Resolution. Posing and Rendering/Comping if needed.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i><i class="fa-brands fa-js"></i><i class="fa-brands fa-css3"></i>
+                <h3>Web Design</h3>
+                <p>Web pages done in HTML 5, CSS, and JavaScript.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+<!---portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My 3D Artwork</h1>
+        <div class="work-list">
+            <div class="artwork">
+                <img src="images/Flash Art.png"width="925" height="530">
+                <p>Recreational art of The Flash's CW Live Action Counterpart(2021)</p>
+            </div>
+            <div class="artwork">
+                <img src="images/IMG_1765.png">
+                <P>Recreational art of Sony's 2007 Live Action Spider-Man(2023)</P>
+            </div>
+            <div class="artwork">
+                <img src="images/The Master Chief.png"width="1050" height="520">
+                <P>Artwork of the videogame character Master Chief(2022)</P>
+            </div>
+        </div>
+        <a href="https://www.artstation.com/emerald123" class="btn1">See More</a>
+    </div>
+    </div>
+</div>
+<div id="coding-portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Coding Creations</h1>
+        <div class="work-list">
+            <div class="artwork">
+                <img src="images/Web.png    "width="560" height="630">
+                <P>In-Dev look of this website(2023)</P>
+            </div>
+            <div class="artwork">
+                <img src="images/BotExample.png"width="1545" height="800">
+                <p>Speaking intelligent Chat-Bot with console transcripts(2022)</p>
+            </div>
+            <div class="artwork">
+                <img src="images/Halo Example.png">
+                <P>Recreational Unreal Engine test of The Halo Series(2022)</P>
+            </div>   
+        </div>
+        <a href="https://twitter.com/Codamations" class="btn1">See More</a>
+    </div>
+    </div>
+</div>
+
+<!---Contact--->
+<div id="contact">
+    <div class="container"> 
+        <div class="row">
+        <div class="contact-left">
+            <class="sub-title">Contact Me</h1>
+            <p>Emeralddespencer@gmail.com <a href="https://www.google.com/gmail/about/"><i class="fa-sharp fa-solid fa-paper-plane"></i></a></p>
+            <p>Codamations #7880 <a href="https://discord.com/"><i class="fa-brands fa-discord"></i></a></p>
+            <p>Artstation <a href="https://www.artstation.com/emerald123"><i class="fa-brands fa-artstation"></i></a></p>
+            <div class="social-icons">
+               <a href="https://twitter.com/Codamations"><i class="fa-brands fa-twitter"></i></a>
+               <a href="https://www.instagram.com/codamations/"><i class="fa-brands fa-instagram"></i></a>
+               <a href="https://www.youtube.com/channel/UCV7XKNIbBKnyOAssoJKuIMg"><i class="fa-brands fa-youtube"></i></a>
+               <a href="https://github.com/GameMaker2001"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="text" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn1-s">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>  
+</div>
+</div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");  
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "50px";
+            
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbydwgCdV2fhLT_Aw_pM6MMDGCpY-W5AS3xKwYLn9J2ox1NdEmE7v2-PomvWpNb_-M_Z/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = "Message Sent!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
     </body>
 </html>   
